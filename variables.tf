@@ -1,12 +1,12 @@
 # variables.tf
 variable "aws_region" {
   description = "AWS region to provision resources"
-  default     = "us-east-1"
+  default     = "us-east-2"
 }
 
 variable "ami" {
   description = "AMI ID for the AWS instance"
-  default     = "ami-0866a3c8686eaeeba"  # Default to Amazon Linux 2
+  default     = "ami-00eb69d236edcfaf8"  # Default to Amazon Linux 2
 }
 
 variable "instance_type" {
@@ -21,5 +21,5 @@ variable "key_name" {
 
 variable "instance_name" {
   description = "Tag for naming the instance"
-  default     = "Demo Server"
+  default     = "sonar Server"
 }
